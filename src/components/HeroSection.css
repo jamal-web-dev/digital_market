@@ -143,6 +143,9 @@ ul li::before{
   }
 }
 @media (max-width: 450px){
+  .hero_section{
+    height: auto;
+  }
   .hero_section ul{
     gap: 22px;
   }

@@ -28,7 +28,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .trusted_section{
-    padding-block: 240px 144px;
+    padding-block: 90px 144px;
     text-align: center;
   }
 }
@@ -36,4 +36,5 @@
   .companies_box{
     grid-template-columns: repeat(1, 1fr);
   }
+  
 }

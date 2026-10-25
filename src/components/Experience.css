@@ -1,0 +1,62 @@
+.experience_section {
+  margin-bottom: 144px;
+}
+.experience_section .container{
+  background-color: var(--light-dark);
+  padding: 70px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  z-index: -4;
+}
+.experience_section .etext{
+  width: 55%;
+  /* border: solid blue; */
+}
+.experience_section img{
+  width: 468px;
+  height: 416px;
+  object-fit: cover;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 9;
+}
+.etext p{
+  margin-block: 8px 30px;
+}
+.etext button{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0;
+}
+.etext button:hover{
+  background-color: white;
+  color: var(--dark)
+}
+.container .blur{
+  width: 180px;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: -80px;
+  top: -90px;
+  filter: blur(90px);
+  opacity: 0.5;
+  z-index: -1;
+}
+@media (max-width: 940px){
+  .experience_section img.bot{
+    display: none;
+  }
+  .experience_section .etext{
+    width: 100%;
+  }
+}
+@media  (max-width: 540px) {
+  .experience_section .container{
+    padding: 20px
+  }
+}

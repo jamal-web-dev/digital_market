@@ -1,0 +1,124 @@
+.workflow-section{
+  padding-bottom: 144px;
+  padding-inline: 1%;
+  text-align: center;
+}
+.workflow-container h1{
+  margin-bottom: 30px;
+}
+.workflow-container button{
+  margin-top: 30px;
+  background: linear-gradient(to right, #5F41FB, #893EFB);
+  transition: 0.8s;
+}
+.workflow-container button:hover{
+  background: linear-gradient(to right, #893EFB, #5F41FB);
+}
+.workflow-container{
+  background: linear-gradient(to bottom, var(--light-dark) 70%, var(--dark) );
+  /* height: 90vh; */
+  border-radius: 30px;
+  padding-top:  128px;
+  padding-inline: 10%;;
+}
+.workflow-container .logos-box{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.logos-box .logo-card{
+  background-color: var(--dark);
+  border-radius: 50%;
+  box-shadow:  0 0 8px #6041fb78;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+}
+.logo-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.logo-card:first-child, .logo-card:last-child{
+  width: 42px;
+  height: 42px;
+}
+.logo-card:nth-child(2),  .logo-card:nth-child(8){
+  width: 56px;
+  height: 56px;
+  padding: 12px;
+}
+.logo-card:nth-child(3), .logo-card:nth-child(4), .logo-card:nth-child(6), .logo-card:nth-child(7){
+  width: 72px;
+  height: 72px;
+  padding: 15px;
+}
+.logo-card:nth-child(5){
+  width: 112px;
+  height: 112px;
+  padding: 22px;
+  animation-name: logoGlow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.workflow-container .card-container{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  gap: 36px;
+  margin-top: 70px;
+}
+.workflow-container .card{
+  padding-inline: 20px;
+}
+.workflow-container .card p{
+  margin-top: 16px;
+}
+@keyframes logoGlow {
+  0%{
+    box-shadow: 0 0 0px 0px #6041fb;
+  }
+  50%{
+    box-shadow: 0 0 0px 12px #6041fb6d;
+  }
+  100%{
+    box-shadow: 0 0 0px 15px #6041fb18;
+  }
+}
+
+@media (max-width: 1200px) {
+  .workflow-container{
+    padding-inline: 5%
+  }
+}
+
+@media (max-width: 940px){
+  .workflow-container .card-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-card:first-child, .logo-card:last-child{
+    display: none;
+  }
+  .workflow-container{
+    padding-inline: 5%;
+  }
+
+}
+@media (max-width: 700px){
+  .logo-card:nth-child(2),  .logo-card:nth-child(8){
+    display: none;
+  }
+  .workflow-container .card-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .logo-card:nth-child(3),  .logo-card:nth-child(7){
+    display: none
+  }
+}

@@ -1,0 +1,66 @@
+.plan_section {
+  margin-bottom: 144px;
+}
+.plan_section .plcontainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+.plan_section h2{
+  width: 50%;
+  text-align: center;
+  margin-inline: auto;
+}
+.plcontainer .plcard{
+  text-align: center;
+  padding: 48px;
+  background-color: var(--light-dark);
+  border-radius: 18px;
+}
+.plcard h4{
+  font-size: 1.12rem;
+  margin-bottom: 9px;
+}
+.plcard h3{
+  font-size: var(--h2-fz);
+
+  span{
+    font-size:  16px;
+    color: rgb(184, 179, 179);
+  }
+}
+.plcard button{
+  margin-block: 20px 30px;
+  border: 1px solid var(--btn-purple);
+  color: var(--btn-purple);
+  background: transparent;
+  border-radius: 4px;
+}
+.plcard button:hover{
+  background-color: var(--btn-purple);
+  color: white;
+}
+.plcard:nth-child(2){
+  background-color: var(--btn-purple);
+  color: white;
+}
+.plcard:nth-child(2) button{
+    background-color: var(--dark);
+    border-color: var(--dark);
+    color: white;
+}
+.plcard:nth-child(2) button:hover{
+  background-color: #1D2028;
+}
+
+@media (max-width: 940px){
+  .plan_section .plcontainer{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 540px){
+  .plan_section h2{
+    width: 100%;
+  }
+}

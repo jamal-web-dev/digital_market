@@ -1,0 +1,39 @@
+.trusted_section{
+  padding-block: 600px 144px;
+  text-align: center;
+}
+.companies_box{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 48px;
+  gap: 10px;
+}
+.companies_box img{
+  width: 140px;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.companies_box img:hover{
+  filter: grayscale(0);
+}
+@media (max-width: 940px){
+  .companies_box{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 32px
+  }
+}
+@media (max-width: 540px){
+  .companies_box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trusted_section{
+    padding-block: 240px 144px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px){
+  .companies_box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
